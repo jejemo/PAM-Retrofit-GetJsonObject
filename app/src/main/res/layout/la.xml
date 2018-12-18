@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/gradients"
+            android:text="Load Data"
+            android:textSize="20sp"
+            android:textColor="@color/txt1"
+            tools:ignore="Suspicious0dp" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="16dp"
+            android:text="Clear Data"
+            android:textSize="20sp"
+            android:textColor="@color/txt1"
+            android:background="@drawable/gradients"
+            tools:ignore="Suspicious0dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
