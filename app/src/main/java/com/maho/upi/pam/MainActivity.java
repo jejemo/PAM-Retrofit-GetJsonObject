@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                     List<ModelData> modelData = response.body();
 
                     for (int i = 0; i < modelData.size();i++) {
-                        if (i == 3) {
+                        if (i == 9) {
                             nama.setText("" + modelData.get(i).getNama());
                             age.setText(": " + modelData.get(i).getAge());
                             nopung.setText("" + modelData.get(i).getNomor());
