@@ -222,23 +222,13 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginHorizontal="16dp"
+            android:layout_marginHorizontal="54dp"
             android:background="@drawable/gradients"
             android:text="Load Data"
             android:textSize="20sp"
             android:textColor="@color/txt1"
             tools:ignore="Suspicious0dp" />
-        <Button
-            android:id="@+id/btnClear"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="16dp"
-            android:text="Clear Data"
-            android:textSize="20sp"
-            android:textColor="@color/txt1"
-            android:background="@drawable/gradients"
-            tools:ignore="Suspicious0dp" />
+
     </LinearLayout>
 
 

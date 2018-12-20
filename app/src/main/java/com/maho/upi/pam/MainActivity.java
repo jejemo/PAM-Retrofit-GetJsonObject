@@ -15,6 +15,8 @@ import com.maho.upi.pam.Apis.ApiService;
 import com.maho.upi.pam.Apis.ApiInterface;
 import com.squareup.picasso.Picasso;
 
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -41,9 +43,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //call method initview
+        initview();
+
+    }
+
+    private void initview() {
+
+        //initimageview
         ikon = (ImageView)findViewById((R.id.ikon));
         gambar = (ImageView)findViewById(R.id.gambar);
 
+        //inittextview
         nama = (TextView)findViewById(R.id.txtNama);
         age = (TextView)findViewById(R.id.txtAge);
         nopung = (TextView)findViewById(R.id.txtNomor);
@@ -52,13 +63,12 @@ public class MainActivity extends AppCompatActivity {
         negara = (TextView)findViewById(R.id.txtNegara);
         deskripsi = (TextView)findViewById(R.id.txtDeskripsi);
         txt = (TextView)findViewById(R.id.txt);
+
+        //initbutton
         generate = (Button)findViewById(R.id.btnLoad);
 
-        clear = (Button)findViewById(R.id.btnClear);
-
-        //btnload
+        //call method btnload
         btnload();
-        //btnclear
     }
 
     private void btnload() {
@@ -66,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 progressDialog = new ProgressDialog(MainActivity.this);
-                progressDialog.setTitle("Get Data");
-                progressDialog.setMessage("Loading ...");
+                progressDialog.setTitle("Sedang mengambil data");
+                progressDialog.setMessage("Sabar ya mas");
                 progressDialog.show();
 
                 getData(); //call method
@@ -81,11 +91,45 @@ public class MainActivity extends AppCompatActivity {
         ApiInterface apiInterface = ApiService.getDataPemain().create(ApiInterface.class);
 
         //Call Object
-        Call<ModelData> call = apiInterface.getPemain();
+        Call<List<ModelData>> call = apiInterface.getPemain();
 
-        call.enqueue(new Callback<ModelData>() {
+        call.enqueue(new Callback<List<ModelData>>() {
             @Override
-            public void onResponse(Call<ModelData> call, Response<ModelData> response) {
+            public void onResponse(Call<List<ModelData>> call, Response<List<ModelData>> response) {
+                try {
+                    List<ModelData> modelData = response.body();
+
+                    for (int i = 0; i < modelData.size();i++) {
+                        if (i == 3) {
+                            nama.setText("" + modelData.get(i).getNama());
+                            age.setText(": " + modelData.get(i).getAge());
+                            nopung.setText("" + modelData.get(i).getNomor());
+                            tim.setText("" + modelData.get(i).getTim());
+                            posisi.setText(": " + modelData.get(i).getPosisi());
+                            negara.setText(": " + modelData.get(i).getNegara());
+                            deskripsi.setText("" + modelData.get(i).getDeskripsi());
+                            String gambar1 = new String(""+ modelData.get(i).getGambar());
+                            String ikon1 = new String(""+ modelData.get(i).getIkon());
+                            Picasso.with(getApplicationContext()).load(gambar1).into(gambar);
+                            Picasso.with(getApplicationContext()).load(ikon1).into(ikon);
+                        }
+                    }
+                }catch (Exception e) {
+                    Log.d("onResponse", "There is an error");
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<ModelData>> call, Throwable t) {
+                progressDialog.dismiss();
+                Toast.makeText(MainActivity.this, "Gagal ambil data", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        /*call.enqueue(new Call<List<ModelData>>() {
+            @Override
+            public void onResponse(Call<List<ModelData>> call, Response<List<ModelData>> response) {
                 progressDialog.dismiss();
                // ModelData datagambar = response.body();
 
@@ -99,14 +143,14 @@ public class MainActivity extends AppCompatActivity {
                     String gambar1 = new String(""+response.body().getGambar());
                     String ikon1 = new String(""+response.body().getIkon());
                     Picasso.with(getApplicationContext()).load(gambar1).into(gambar);
-                Picasso.with(getApplicationContext()).load(ikon1).into(ikon);
+                    Picasso.with(getApplicationContext()).load(ikon1).into(ikon);
             }
 
             @Override
             public void onFailure(Call<ModelData> call, Throwable t) {
                 progressDialog.dismiss();
-                Toast.makeText(MainActivity.this, "Failed to load", Toast.LENGTH_LONG).show();
-            }
-        });
+                Toast.makeText(MainActivity.this, "Gagal ambil data", Toast.LENGTH_LONG).show();
+            }*/
+        //});
     }
 }
