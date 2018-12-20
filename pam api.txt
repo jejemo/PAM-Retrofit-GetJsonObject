@@ -1,0 +1,146 @@
+﻿{"playerdata" : [
+{
+		"id": "0",
+		"nama": "Philippe Coutinho",
+		"nomor" : "7",
+		"age": "26",
+		"ikon": "http://pngimg.com/uploads/fcb_logo/fcb_logo_PNG25.png",
+		"team": "Barcelona",
+		"posisi": "Midfielder",
+		"negara": "Brazil",
+		"gambar": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/10/09/ec682598-d61c-46ff-9946-11d8859b2033/Coutinho-Hero-2018-19.png",
+		"deskripsi": "Born on 12 June, 1992 in Rio de Janeiro, Brazil, Phillipe Coutinho is one of the most talented midfielders in the world with the potential to get even better. The Brazilian has shown his talent and class at the highest level with Premier League club Liverpool and with the Brazilian national side."
+	},
+	{
+		"id": "1",
+		"nama": "Nélson Semedo",
+		"nomor" : "2",
+		"age": "25",
+		"ikon": "http://pngimg.com/uploads/fcb_logo/fcb_logo_PNG25.png",
+		"team": "Barcelona",
+		"posisi": "Defender",
+		"negara": "Portugal",
+		"gambar": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/10/09/6719afc1-05f4-4cba-86d0-817b9a2c2820/Semedo-Hero-2018-19.png",
+		"deskripsi": "Nélson Cabral Semedo, born 16 November 1993, joined Benfica in 2012 from Sintrense. He went back on loan to his former club for a year before becoming a full time member of the Eagles’ reserves. He performed brilliantly for the second team, and made his first team debut in the 2015 Portuguese Super Cup against Sporting Lisbon. "
+	},
+	{
+		"id": "2",
+		"nama": "Luis Suarez",
+		"nomor" : "9",
+		"age": "31",
+		"ikon": "http://pngimg.com/uploads/fcb_logo/fcb_logo_PNG25.png",
+		"team": "Barcelona",
+		"posisi": "Forward",
+		"negara": "Uruguay",
+		"gambar": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/10/09/3a2bc952-a7d1-48d8-ab5d-272d3ff6ed17/Suarez-Hero-2018-19.png",
+		"deskripsi": "Luis Alberto Suárez Díaz came to the Camp Nou in the summer of 2014 as holder of the Golden Boot and one of the biggest stars in world football. The striker was born in Salto (Uruguay) on January 24 1987, and has signed for five seasons."
+	},
+	{
+		"id": "3",
+		"nama": "Thomas Vermaelen",
+		"nomor" : "24",
+		"age": "33",
+		"ikon": "http://pngimg.com/uploads/fcb_logo/fcb_logo_PNG25.png",
+		"team": "Barcelona",
+		"posisi": "Defender",
+		"negara": "Belgium",
+		"gambar": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/10/09/24a4c271-a522-48a9-aebe-ec2c3fa392ee/Vermaelen.png",
+		"deskripsi": "Marc-André ter Stegen signed for FC Barcelona in the summer of 2014 from Borussia Mönchengladbach. Born on 30 April 1992 in Mönchengladbach itself, the German did not take long to make his name as one Europe’s most promising young goalkeepers."
+	},
+	{
+		"id": "4",
+		"nama": "Marc-Andre ter Stegen",
+		"nomor" : "1",
+		"age": "26",
+		"ikon": "http://pngimg.com/uploads/fcb_logo/fcb_logo_PNG25.png",
+		"team": "Barcelona",
+		"posisi": "Goalkeeper",
+		"negara": "Germany",
+		"gambar": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/10/09/c47f73a2-809e-41c3-9a10-f70731081f6f/p77318.png",
+		"deskripsi": "Marc-André ter Stegen (German pronunciation: ; born 30 April 1992) is a German professional footballer who plays for Spanish club FC Barcelona as a goalkeeper.\r\n\r\nAfter four seasons in the Bundesliga with Borussia Mönchengladbach, Ter Stegen joined Barcelona for €12 million in 2014. He has represented Germany at several youth levels and made his senior international debut in 2012."
+	},
+	{
+		"id": "5",
+		"nama": "Gerard Pique",
+		"nomor" : "3",
+		"age": "31",
+		"ikon": "http://pngimg.com/uploads/fcb_logo/fcb_logo_PNG25.png",
+		"team": "Barcelona",
+		"posisi": "Defender",
+		"negara": "Spain",
+		"gambar": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/10/09/037e20e0-448b-4380-89e5-171782bde3d8/Pique-Hero-2018-19.png",
+		"deskripsi": "Gerard Piqué returned to FC Barcelona, the club where he started out as a youngster, in the summer of 2008, after three seasons with Manchester United and one on loan with Real Zaragoza."
+	},
+	{
+		"id": "6",
+		"nama": "Jordi Alba",
+		"nomor" : "18",
+		"age": "29",
+		"ikon": "http://pngimg.com/uploads/fcb_logo/fcb_logo_PNG25.png",
+		"team": "Barcelona",
+		"posisi": "Defender",
+		"negara": "Spain",
+		"gambar": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/10/09/283cfa72-24e2-465e-871c-43fa64cbcb47/Alba-Hero-2018-19.png",
+		"deskripsi": "Jordi Alba signed for FC Barcelona on 5 July 2012 after the Club had reached an agreement with Valencia for his transfer. The Catalan defender was 23 when he joined the Club and was the first signing of the 2012/13 season."
+	},
+	{
+		"id": "7",
+		"nama": "Sergi Busquets",
+		"nomor" : "5",
+		"age": "30",
+		"ikon": "http://pngimg.com/uploads/fcb_logo/fcb_logo_PNG25.png",
+		"team": "Barcelona",
+		"posisi": "Midfielder",
+		"negara": "Spain",
+		"gambar": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/10/09/9253d076-45a5-4fac-990e-cff974aea52b/Busquets-Hero-2018-19.png",
+		"deskripsi": "Born in Sabadell, he joined the Barça youth system in the summer of 2005 from Jabac. That season, playing for the U19A side, he won three major trophies. In the 2006-07 season, Sergio Busquets continued with U19A and was one of the core players in the side coached by Àlex Garcia. In his third year at the level, "
+	},
+	{
+		"id": "8",
+		"nama": "Sergi Roberto",
+		"nomor" : "20",
+		"age": "26",
+		"ikon": "http://pngimg.com/uploads/fcb_logo/fcb_logo_PNG25.png",
+		"team": "Barcelona",
+		"posisi": "Defender",
+		"negara": "Spain",
+		"gambar": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/10/09/aa86758a-73a8-48b4-b45f-445854950866/Sergi-Roberto-Hero-2018-19.png",
+		"deskripsi": "When Sergi Roberto was 14 years old he traded the town of Reus for La Masia. The ex-Nàstic Tarragona midfielder improved year after year until he became a crucial player for Luis Enrique’s Barça B team."
+	},
+	{
+		"id": "9",
+		"nama": "Lionel Messi",
+		"nomor" : "10",
+		"age": "31",
+		"ikon": "http://pngimg.com/uploads/fcb_logo/fcb_logo_PNG25.png",
+		"team": "Barcelona",
+		"posisi": "Forward",
+		"negara": "Argentina",
+		"gambar": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/10/09/608bb4da-06db-47b1-ac42-55707ec47a66/p19054.png",
+		"deskripsi": "Leo Messi's footballing career started in 1995 at Newell's Old Boys, where he played until the year 2000. At the age of 13, Lionel Messi crossed the Atlantic to try his luck in Barcelona, and joined the Under 14s. Messi made spectacular progress at each of the different age levels, climbing through the ranks to Barça C. "
+	}
+]
+}
+
+http://pngimg.com/uploads/fcb_logo/fcb_logo_PNG25.png
+
+base Url : https://api.myjson.com/bins/j5ux0
+
+//new url : https://api.myjson.com/bins/1fvxhk
+
+yang akan di pakai: https://api.myjson.com/bins/dwh3c
+
+api jumat besok : https://api.myjson.com/bins/14qzug
+
+new api array: https://api.myjson.com/bins/14if7c
+
+
+JsonObject :
+final messi : https://api.myjson.com/bins/ezcs8
+https://api.myjson.com/bins/vpmvs
+
+
+JsonArray :
+https://api.myjson.com/bins/xavu8
+https://api.myjson.com/bins/1ck82o
+getobject : https://api.myjson.com/bins/fp494
