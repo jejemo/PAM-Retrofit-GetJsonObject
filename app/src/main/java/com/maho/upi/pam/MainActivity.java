@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<ModelData>> call, Response<List<ModelData>> response) {
                 try {
+                    progressDialog.dismiss();
                     List<ModelData> modelData = response.body();
 
                     for (int i = 0; i < modelData.size();i++) {
