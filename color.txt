@@ -1,0 +1,11 @@
+<color name="gradstart">#1488CC</color>
+    <color name="gradend">#78FFD6</color>
+    <color name="appbar">#1488CC</color>
+    <color name="txt1">#FFFFFF</color>
+    <color name="txt2">#00CF00</color>
+    <color name="txt3">#595959</color>
+    <color name="txt4">#707070</color>
+    <color name="txt5">#272727</color>
+    <color name="btn">#F85757</color>
+    <color name="shape">#60000000</color>
+    <color name="card1">#d2ffffff</color>

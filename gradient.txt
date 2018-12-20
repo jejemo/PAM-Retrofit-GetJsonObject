@@ -1,0 +1,8 @@
+<gradient
+        android:startColor="@color/gradend"
+        android:endColor="@color/gradstart"
+        android:angle="135">
+
+</gradient>
+<corners
+	android:radius="10dp"/>
