@@ -4,8 +4,10 @@ import com.google.gson.annotations.SerializedName;
 
 @SuppressWarnings("ALL")
 public class ModelData {
-    @SerializedName("id")
-    String id;
+
+
+    @SerializedName("id") //convert jsonobjet from gson to android
+    String id; //Inisialiasi model
     @SerializedName("ikon")
     String ikon;
     @SerializedName("gambar")
@@ -25,6 +27,8 @@ public class ModelData {
     @SerializedName("deskripsi")
     String deskripsi;
 
+
+    //Getter and Setter
     public String getId() {
         return id;
     }

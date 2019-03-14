@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 progressDialog = new ProgressDialog(MainActivity.this);
                 progressDialog.setTitle("Sedang mengambil data");
-                progressDialog.setMessage("Sabar ya mas");
+                progressDialog.setMessage("Sekk");
                 progressDialog.show();
 
                 getData(); //call method
@@ -94,14 +94,20 @@ public class MainActivity extends AppCompatActivity {
         Call<List<ModelData>> call = apiInterface.getPemain();
 
         call.enqueue(new Callback<List<ModelData>>() {
+            @SuppressLint("SetTextI18n")
             @Override
+            //Mengambil response body pada jsonarray
             public void onResponse(Call<List<ModelData>> call, Response<List<ModelData>> response) {
                 try {
                     progressDialog.dismiss();
+
                     List<ModelData> modelData = response.body();
 
+                    EditText input = (EditText)findViewById(R.id.input);
+                    int n = Integer.parseInt(input.getText().toString());
+
                     for (int i = 0; i < modelData.size();i++) {
-                        if (i == 9) {
+                        if (i == n) {
                             nama.setText("" + modelData.get(i).getNama());
                             age.setText(": " + modelData.get(i).getAge());
                             nopung.setText("" + modelData.get(i).getNomor());
@@ -109,8 +115,10 @@ public class MainActivity extends AppCompatActivity {
                             posisi.setText(": " + modelData.get(i).getPosisi());
                             negara.setText(": " + modelData.get(i).getNegara());
                             deskripsi.setText("" + modelData.get(i).getDeskripsi());
+
                             String gambar1 = new String(""+ modelData.get(i).getGambar());
                             String ikon1 = new String(""+ modelData.get(i).getIkon());
+
                             Picasso.with(getApplicationContext()).load(gambar1).into(gambar);
                             Picasso.with(getApplicationContext()).load(ikon1).into(ikon);
                         }
@@ -127,31 +135,5 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Gagal ambil data", Toast.LENGTH_LONG).show();
             }
         });
-
-        /*call.enqueue(new Call<List<ModelData>>() {
-            @Override
-            public void onResponse(Call<List<ModelData>> call, Response<List<ModelData>> response) {
-                progressDialog.dismiss();
-               // ModelData datagambar = response.body();
-
-                    nama.setText("" + response.body().getNama());
-                    age.setText(": " + response.body().getAge());
-                    nopung.setText("" + response.body().getNomor());
-                    tim.setText("" + response.body().getTim());
-                    posisi.setText(": " + response.body().getPosisi());
-                    negara.setText(": " + response.body().getNegara());
-                    deskripsi.setText("" + response.body().getDeskripsi());
-                    String gambar1 = new String(""+response.body().getGambar());
-                    String ikon1 = new String(""+response.body().getIkon());
-                    Picasso.with(getApplicationContext()).load(gambar1).into(gambar);
-                    Picasso.with(getApplicationContext()).load(ikon1).into(ikon);
-            }
-
-            @Override
-            public void onFailure(Call<ModelData> call, Throwable t) {
-                progressDialog.dismiss();
-                Toast.makeText(MainActivity.this, "Gagal ambil data", Toast.LENGTH_LONG).show();
-            }*/
-        //});
     }
 }

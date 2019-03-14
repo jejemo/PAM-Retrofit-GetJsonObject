@@ -18,22 +18,54 @@ android {
     }
 }
 
+ext{
+    versions = [
+        android     : '27.+',
+        constraint  : '1.1.3',
+        retrofit    : '2.5.0',
+        gson        : '2.8.2',
+        picasso     : '2.5.2',        
+    ]
+
+    androidDeps = [
+        appcompat       : 'com.android.support:appcompat-v7:' + versions.android,
+        design          : 'com.android.support:design:' + versions.android,
+        constraintLayout: 'com.android.support.constraint:constraint-layout:' + versions.constraint,
+        cardview        : 'com.android.support:cardview-v7:' + versions.android 
+    ]
+
+    networkDeps = [
+        retrofit        : 'com.squareup.retrofit2:retrofit:' + versions.retrofit,
+        gsonR            : 'com.squareup.retrofit2:converter-gson:' + versions.retrofit,
+        gsonAnnon       : 'com.google.code.gson:gson:' + versions.gson
+    ]
+
+    imageDeps = [
+        picasso         : 'com.squareup.picasso:picasso:' + versions.picasso,
+    ]
+}
+
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    
+    implementation androidDeps.values()
+    implementation networkDeps.values()
+    implementation imageDeps.values()
+    
     //android gradle
     //noinspection GradleCompatible
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    implementation 'com.android.support:design:28.0.0'
-    implementation 'com.android.support:cardview-v7:28.0.0'
-    //thirty gradle
-        //image circle
-        implementation 'de.hdodenhof:circleimageview:2.2.0'
-        //retrofit, picasso, gson
-        implementation 'com.squareup.picasso:picasso:2.5.2'
-        implementation 'com.squareup.retrofit2:retrofit:2.3.0'
-        implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
-        implementation 'com.google.code.gson:gson:2.8.2'
+    // implementation 'com.android.support:appcompat-v7:28.0.0'
+    // implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    // implementation 'com.android.support:design:28.0.0'
+    // implementation 'com.android.support:cardview-v7:28.0.0'
+    // //thirty gradle
+    //     //image circle
+    //     implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //     //retrofit, picasso, gson
+    //     implementation 'com.squareup.picasso:picasso:2.5.2'
+    //     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    //     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    //     implementation 'com.google.code.gson:gson:2.8.2'
 
     //testing
     testImplementation 'junit:junit:4.12'
